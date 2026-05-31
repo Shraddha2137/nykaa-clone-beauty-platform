@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products - Beauty Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Beauty Products</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="wishlist.html">Wishlist</a>
+    </nav>
+  </header>
+
+  <aside class="filters">
+    <h3>Filters</h3>
+    <label>Price Range:</label>
+    <select id="priceFilter" onchange="applyFilter()">
+      <option value="">All</option>
+      <option value="low">Under ₹500</option>
+      <option value="mid">₹500 - ₹1000</option>
+      <option value="high">Above ₹1000</option>
+    </select>
+  </aside>
+
+  <section id="results"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
